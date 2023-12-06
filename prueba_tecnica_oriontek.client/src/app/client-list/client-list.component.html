@@ -1,0 +1,26 @@
+<!-- Botón para crear un nuevo cliente -->
+<button class="create-button" [routerLink]="['add-client']">Nuevo Cliente</button>
+
+<!-- Bucle para mostrar la información de cada cliente en la lista 'clients' -->
+<div *ngFor="let client of clients">
+  <!-- Nombre del cliente -->
+  <h3>{{ client.name }}</h3>
+
+  <!-- Lista de direcciones del cliente -->
+  <ul>
+    <h4> Direcciones:</h4>
+    <!-- Bucle para mostrar cada dirección del cliente -->
+    <li *ngFor="let address of client.addresses">
+      {{ address.street }}, {{ address.city }}
+    </li>
+  </ul>
+
+  <!-- Botón para ver detalles del cliente, al hacer clic se llama a la función viewDetails() con el ID del cliente como parámetro -->
+  <button (click)="viewDetails(client.id)">Ver Detalles</button>
+
+</div>
+
+<!-- Advertencia de datos: se muestra un mensaje informando que ninguno de los datos será guardado permanentemente -->
+<div class="data-warning">
+  <p>Ninguno de los datos serán guardados permanentemente.</p>
+</div>

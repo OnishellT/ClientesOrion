@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "prueba_tecnica_oriontek.Server", "prueba_tecnica_oriontek.Server\prueba_tecnica_oriontek.Server.csproj", "{3CAFB91D-315A-4747-A744-18CD56BF4B06}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "prueba_tecnica_oriontek.client", "prueba_tecnica_oriontek.client\prueba_tecnica_oriontek.client.esproj", "{0A0F65FB-9E4A-42DA-915D-B2A884479350}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CAFB91D-315A-4747-A744-18CD56BF4B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CAFB91D-315A-4747-A744-18CD56BF4B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CAFB91D-315A-4747-A744-18CD56BF4B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CAFB91D-315A-4747-A744-18CD56BF4B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A0F65FB-9E4A-42DA-915D-B2A884479350}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A0F65FB-9E4A-42DA-915D-B2A884479350}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A0F65FB-9E4A-42DA-915D-B2A884479350}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0A0F65FB-9E4A-42DA-915D-B2A884479350}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A0F65FB-9E4A-42DA-915D-B2A884479350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A0F65FB-9E4A-42DA-915D-B2A884479350}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E63AB484-1138-4940-B30B-A15CDBE91900}
+	EndGlobalSection
+EndGlobal

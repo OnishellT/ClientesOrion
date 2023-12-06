@@ -1,0 +1,27 @@
+/* Estilos para el contenedor principal */
+:host {
+  max-width: 1280px; /* Establece el ancho máximo del contenedor a 1280 píxeles */
+  padding: 2rem; /* Añade un relleno interno de 2 rem unidades alrededor del contenido */
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* Estilos para las filas pares de una tabla */
+tr:nth-child(even) {
+  background: #F2F2F2; /* Establece el fondo de las filas pares a un tono de gris (#F2F2F2) */
+}
+
+/* Estilos para las filas impares de una tabla */
+tr:nth-child(odd) {
+  background: #FFF; /* Establece el fondo de las filas impares a blanco (#FFF) */
+}
+
+/* Estilos para las celdas de encabezado y datos de una tabla */
+th, td {
+  padding-left: 1rem; /* Añade un relleno a la izquierda de 1 rem unidad en las celdas de encabezado y datos */
+  padding-right: 1rem; /* Añade un relleno a la derecha de 1 rem unidad en las celdas de encabezado y datos */
+}
+
+/* Estilos para la tabla en general */
+table {
+  margin: 0 auto; /* Centra la tabla horizontalmente estableciendo el margen izquierdo y derecho a "auto" */
+}

@@ -1,0 +1,6 @@
+@prueba_tecnica_oriontek.Server_HostAddress = http://localhost:5170
+
+GET {{prueba_tecnica_oriontek.Server_HostAddress}}/clients
+Accept: application/json
+
+###

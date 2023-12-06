@@ -1,0 +1,57 @@
+/* Estilo para el contenedor principal */
+div {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo para encabezados de nivel 3 */
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Estilo para listas no ordenadas */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Estilo para elementos de lista */
+li {
+  margin-bottom: 5px;
+}
+
+/* Estilo para formularios */
+form {
+  margin-top: 20px;
+}
+
+/* Estilo para etiquetas de formulario */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Estilo para campos de entrada de texto */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Estilo para botones */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+  /* Cambio de estilo al pasar el cursor sobre el botón */
+  button:hover {
+    background-color: #45a049;
+  }

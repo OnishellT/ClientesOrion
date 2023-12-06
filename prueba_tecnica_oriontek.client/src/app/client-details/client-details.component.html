@@ -1,0 +1,49 @@
+<!-- src/app/client-details/client-details.component.html -->
+<!-- Botón para volver a la página de inicio -->
+<button (click)="goToHome()">
+  <i class="fas fa-home"></i> Inicio
+</button>
+
+<!-- Sección de detalles del cliente -->
+<div>
+  <h3>{{ client.name }}</h3>
+  <ul>
+    <!-- Mostrar direcciones con controles de edición -->
+    <li *ngFor="let address of client.addresses; let i = index">
+      <!-- Controles de edición desactivados -->
+      <div *ngIf="!address.editMode">
+        {{ address.street }}, {{ address.city }}
+        <button (click)="toggleEditMode(address)">Editar</button>
+      </div>
+
+      <!-- Controles de edición activados -->
+      <div *ngIf="address.editMode">
+        <label for="street{{i}}">Calle:</label>
+        <input id="street{{i}}" [(ngModel)]="address.street" name="street{{i}}" required>
+
+        <label for="city{{i}}">Ciudad:</label>
+        <input id="city{{i}}" [(ngModel)]="address.city" name="city{{i}}" required>
+
+        <!-- Agrega más campos según tu modelo de dirección -->
+
+        <button (click)="saveAddress(client.id, address)">Guardar</button>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Encabezado para agregar nueva dirección -->
+  <h4>Agregar Dirección</h4>
+
+  <!-- Formulario para agregar nueva dirección -->
+  <form (ngSubmit)="addAddress()">
+    <label for="street">Calle:</label>
+    <input id="street" [(ngModel)]="newAddress.street" name="street" required>
+
+    <label for="city">Ciudad:</label>
+    <input id="city" [(ngModel)]="newAddress.city" name="city" required>
+
+    <!-- Agrega más campos según tu modelo de dirección -->
+
+    <button type="submit">Agregar Dirección</button>
+  </form>
+</div>

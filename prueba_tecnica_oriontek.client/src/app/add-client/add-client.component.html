@@ -1,0 +1,35 @@
+<!-- Botón para volver a la página de inicio -->
+<button (click)="goToHome()">
+  <i class="fas fa-home"></i> Inicio
+</button>
+
+<!-- Sección para agregar un nuevo cliente -->
+<div>
+  <h3>Agregar Cliente</h3>
+
+  <!-- Formulario para enviar la información del nuevo cliente -->
+  <form (ngSubmit)="addClient()">
+
+    <!-- Campo de entrada para el nombre del cliente -->
+    <label for="clientName">Nombre del Cliente:</label>
+    <input id="clientName" [(ngModel)]="newClient.name" name="clientName" required>
+
+    <!-- Bucle para mostrar y agregar direcciones del cliente -->
+    <div *ngFor="let address of newClient.addresses; let i = index">
+
+      <!-- Campo de entrada para la calle de la dirección -->
+      <label for="street{{i}}">Calle:</label>
+      <input id="street{{i}}" [(ngModel)]="address.street" name="street{{i}}" required>
+
+      <!-- Campo de entrada para la ciudad de la dirección -->
+      <label for="city{{i}}">Ciudad:</label>
+      <input id="city{{i}}" [(ngModel)]="address.city" name="city{{i}}" required>
+    </div>
+
+    <!-- Botón para agregar una nueva dirección -->
+    <button type="button" (click)="addAddress()">Agregar Dirección</button>
+
+    <!-- Botón para enviar el formulario y agregar el cliente -->
+    <button type="submit">Agregar Cliente</button>
+  </form>
+</div>
