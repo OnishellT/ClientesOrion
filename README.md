@@ -1,4 +1,4 @@
-# Prueba Técnica Oriontek
+# Prueba Técnica Oriontek ⭐
 
 Este proyecto es una prueba técnica diseñada para evaluar las habilidades y conocimientos de los candidatos para el rol de Arquitecto de Software en Oriontek.
 
